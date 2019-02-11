@@ -39,6 +39,7 @@ footer, header, hgroup, menu, nav, section {
 }
 body {
     line-height: 1;
+    background: #fff;
 }
 ol, ul {
     list-style: none;
@@ -127,7 +128,7 @@ thead {
     margin-top: 1.3em;
     font-family: sans-serif;
     text-align: right;
-    color: #BBB;
+    color: #AAA;
 }
 .info a {
     color: inherit;
@@ -221,7 +222,7 @@ sub {
 form.inline_edit {
     clear: both;
     margin: 4.5em 0;
-    background-color: #DDD;
+    background-color: #AAA;
     color: #000;
     padding: 20px;
     border-radius: 5px;
@@ -274,7 +275,7 @@ header h1 {
 header h2 {
     font-size: 1em;
     margin: .3em 0;
-    color: #DDD;
+    color: #AAA;
 }
 
 #content {
@@ -310,7 +311,7 @@ header h2 {
     border: none;
 }
 .pages a:hover {
-    background-color: #DDD;
+    background-color: #AAA;
 }
 .pages span {
     display: block;
@@ -340,7 +341,7 @@ footer {
     font-family: sans-serif;
     line-height: 2.5em;
     text-align: center;
-    color: #BBB;
+    color: #AAA;
     margin: 3em 0;
     border: 1px solid #EEE;
     border-radius: 5px;
