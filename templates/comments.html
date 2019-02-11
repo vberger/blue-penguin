@@ -9,4 +9,13 @@
     })();
 </script>
 <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript" rel="nofollow">comments powered by Disqus.</a></noscript>
+{% elif ISSO_URL %}
+<section id="isso-thread"></section>
+<script data-isso="{{ ISSO_URL }}"
+        data-isso-lang="{{ DEFAULT_LANG }}"
+        data-isso-avatar="false"
+        data-isso-gravatar="true"
+        data-isso-vote="true"
+        src="{{ ISSO_URL}}/js/embed.min.js">
+</script>
 {% endif %}
