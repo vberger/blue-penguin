@@ -51,7 +51,7 @@
             <ul>
             {% block ephemeral_nav %}{% endblock %}
                 {% if DISPLAY_HOME or DISPLAY_HOME is not defined %}
-                <li{% if output_file == "index.html" %} class="selected"{% endif %}><a href="{{ SITEURL }}/">Home</a></li>
+                <li{% if output_file == "index.html" %} class="selected"{% endif %}><a href="{{ SITEURL }}/">Accueil</a></li>
                 {% endif %}
                 {% if DISPLAY_PAGES_ON_MENU %}
                 {% for p in pages %}
@@ -83,16 +83,16 @@
             <div class="clear"></div>
             <footer>
                 <p>
-                <a href="https://github.com/jody-frankowski/blue-penguin">Blue Penguin</a> Theme
+                Thème <a href="https://github.com/jody-frankowski/blue-penguin">Blue Penguin</a>
                 &middot;
-                Powered by <a href="http://getpelican.com">Pelican</a>
+                Propulsé par <a href="http://getpelican.com">Pelican</a>
                  {% if FEED_ALL_ATOM %}
                 &middot;
-                <a href="{{ SITEURL }}/{{ FEED_ALL_ATOM }}" rel="alternate">Atom Feed</a>
+                <a href="{{ SITEURL }}/{{ FEED_ALL_ATOM }}" rel="alternate">Flux Atom</a>
                  {% endif %}
                  {% if FEED_ALL_RSS %}
                 &middot;
-                <a href="{{ SITEURL }}/{{ FEED_ALL_RSS }}" rel="alternate">Rss Feed</a>
+                <a href="{{ SITEURL }}/{{ FEED_ALL_RSS }}" rel="alternate">Flux Rss</a>
                  {% endif %}
             </footer>
             {% endif %}
