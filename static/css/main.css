@@ -278,6 +278,11 @@ header h2 {
     color: #AAA;
 }
 
+header .logo_box img {
+    border: 0;
+    box-shadow: none;
+}
+
 #content {
     margin-top: 3em;
 }

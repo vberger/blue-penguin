@@ -67,8 +67,11 @@
             </ul>
         </nav>
         {% endif %}
+        {% if SITEIMAGE %}
+        <div class="logo_box"><img src="{{ SITEIMAGE }}" style="float: left;" /></div>
+        {% endif %}
         <div class="header_box">
-            <h1><a href="{{ SITEURL }}/">{{ SITENAME }}</a></h1>
+                        <h1><a href="{{ SITEURL }}/">{{ SITENAME }}</a></h1>
             {% if SITESUBTITLE %}
             <h2>{{ SITESUBTITLE }}</h2>
             {% endif %}
