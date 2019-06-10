@@ -36,6 +36,11 @@
     {% if TAG_FEED_RSS and tag %}
     <link href="{{ FEED_DOMAIN }}/{{ TAG_FEED_RSS.format(slug=tag.slug) }}" type="application/rss+xml" rel="alternate" title="{{ SITENAME }} Tags RSS Feed" />
     {% endif %}
+    {% if TWITTER_CARD_ACCOUNT %}
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:size" content="{{ TWITTER_CARD_ACCOUNT }}" />
+    <meta name="twitter:title" content="{{ self.title() }}" />
+    {% endif %}
     <link rel="stylesheet" href="{{ SITEURL }}/theme/css/main.css" type="text/css" />
     <link rel="stylesheet" href="{{ SITEURL }}/theme/css/pygments.css" type="text/css" />
     <meta name="generator" content="Pelican" />
