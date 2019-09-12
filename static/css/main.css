@@ -114,6 +114,16 @@ thead {
     border-bottom: 1px solid black;
 }
 
+details {
+    background-color: #EEE;
+    border-radius: 0.2em;
+    padding: 0.5em;
+}
+
+summary {
+    cursor: pointer;
+}
+
 .date {
     color: #CCC;
     float: left;
